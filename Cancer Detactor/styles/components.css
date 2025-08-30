@@ -1,0 +1,1874 @@
+/* Patient Registration Styles */
+.registration-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.registration-form-card {
+    background: var(--background-color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    padding: 1.5rem;
+    border: 1px solid var(--border-color);
+    position: relative;
+}
+
+.registration-form-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+}
+
+.registration-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.registration-form .form-section {
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    background: var(--background-secondary);
+}
+
+.registration-form .form-section h4 {
+    color: var(--text-color);
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.registration-form .form-section h4 i {
+    color: var(--primary-color);
+}
+
+.registration-form .form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 0.75rem;
+}
+
+.registration-form .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.registration-form .form-group.full-width {
+    grid-column: 1 / -1;
+}
+
+.registration-form .form-group label {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.registration-form .form-control {
+    padding: 0.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    font-size: 0.9rem;
+    background: var(--background-color);
+    color: var(--text-color);
+    transition: border-color 0.3s ease;
+}
+
+.registration-form .form-control:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.1);
+}
+
+.registration-form .form-actions {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
+    flex-wrap: wrap;
+}
+
+.registration-form .form-actions .btn {
+    min-width: 120px;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+}
+
+/* Responsive styles for Patient Registration */
+@media (max-width: 1024px) {
+    .registration-container {
+        max-width: 100%;
+        padding: 0 0.5rem;
+    }
+    
+    .registration-form .form-grid {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 0.5rem;
+    }
+    
+    .registration-form .form-section {
+        padding: 0.75rem;
+    }
+    
+    .registration-form .form-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .registration-form .form-actions .btn {
+        width: 100%;
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .registration-form-card {
+        padding: 1rem;
+    }
+    
+    .registration-form .form-grid {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+    }
+    
+    .registration-form .form-section h4 {
+        font-size: 0.95rem;
+    }
+    
+    .registration-form .form-group label {
+        font-size: 0.8rem;
+    }
+    
+    .registration-form .form-control {
+        padding: 0.4rem;
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .registration-container {
+        gap: 1rem;
+    }
+    
+    .registration-form-card {
+        padding: 0.75rem;
+    }
+    
+    .registration-form-card h3 {
+        font-size: 1.1rem;
+    }
+    
+    .registration-form .form-section {
+        padding: 0.5rem;
+    }
+    
+    .registration-form .form-section h4 {
+        font-size: 0.9rem;
+        margin-bottom: 0.75rem;
+    }
+    
+    .registration-form .form-control {
+        padding: 0.35rem;
+        font-size: 0.8rem;
+    }
+    
+    .registration-form .form-actions .btn {
+        padding: 0.6rem 1rem;
+        font-size: 0.85rem;
+    }
+}
+.prediction-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.prediction-form-card {
+    background: var(--background-color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    padding: 1.5rem;
+    border: 1px solid var(--border-color);
+    position: relative;
+}
+
+.prediction-form-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+}
+
+.form-description {
+    color: var(--text-muted);
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+}
+
+.prediction-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-section {
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    background: var(--background-secondary);
+}
+
+.form-section h4 {
+    color: var(--text-color);
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.form-section h4 i {
+    color: var(--primary-color);
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 0.75rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.form-group label {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.form-control {
+    padding: 0.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    font-size: 0.9rem;
+    background: var(--background-color);
+    color: var(--text-color);
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.1);
+}
+
+.form-actions {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
+    flex-wrap: wrap;
+}
+
+.form-actions .btn {
+    min-width: 120px;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+}
+
+.prediction-results-card {
+    background: var(--background-color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    padding: 2rem;
+    border: 1px solid var(--border-color);
+    animation: slideInUp 0.5s ease-out;
+}
+
+.prediction-results-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.result-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.prediction-score {
+    text-align: center;
+}
+
+.score-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin: 0 auto;
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
+}
+
+.score-number {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.score-label {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+.prediction-details {
+    width: 100%;
+    max-width: 400px;
+}
+
+.result-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.result-item:last-child {
+    border-bottom: none;
+}
+
+.result-label {
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.result-value {
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.result-value.malignant {
+    color: var(--danger-color);
+}
+
+.result-value.benign {
+    color: var(--success-color);
+}
+
+.result-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Loading animation for prediction */
+.prediction-loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.prediction-loading .spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid var(--border-color);
+    border-top: 4px solid var(--primary-color);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+.prediction-loading p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+/* Sample data button */
+.sample-data-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: var(--border-radius);
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.sample-data-btn:hover {
+    background: var(--primary-color);
+    transform: translateY(-1px);
+}
+
+/* Responsive styles for AI Prediction */
+@media (max-width: 1024px) {
+    .prediction-container {
+        max-width: 100%;
+        padding: 0 0.5rem;
+    }
+    
+    .form-grid {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 0.5rem;
+    }
+    
+    .form-section {
+        padding: 0.75rem;
+    }
+    
+    .form-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .form-actions .btn {
+        width: 100%;
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .prediction-form-card {
+        padding: 1rem;
+    }
+    
+    .form-grid {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+    }
+    
+    .form-section h4 {
+        font-size: 0.95rem;
+    }
+    
+    .form-group label {
+        font-size: 0.8rem;
+    }
+    
+    .form-control {
+        padding: 0.4rem;
+        font-size: 0.85rem;
+    }
+    
+    .sample-data-btn {
+        position: static;
+        margin-bottom: 1rem;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .prediction-container {
+        gap: 1rem;
+    }
+    
+    .prediction-form-card {
+        padding: 0.75rem;
+    }
+    
+    .prediction-form-card h3 {
+        font-size: 1.1rem;
+    }
+    
+    .form-description {
+        font-size: 0.8rem;
+        margin-bottom: 1rem;
+    }
+    
+    .form-section {
+        padding: 0.5rem;
+    }
+    
+    .form-section h4 {
+        font-size: 0.9rem;
+        margin-bottom: 0.75rem;
+    }
+    
+    .form-control {
+        padding: 0.35rem;
+        font-size: 0.8rem;
+    }
+    
+    .form-actions .btn {
+        padding: 0.6rem 1rem;
+        font-size: 0.85rem;
+    }
+}
+
+.sample-data-btn:hover {
+    background: var(--primary-color);
+    transform: translateY(-2px);
+}
+
+/* Responsive design for prediction form */
+@media (max-width: 768px) {
+    .prediction-container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .prediction-form-card,
+    .prediction-results-card {
+        padding: 1rem;
+    }
+    
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .form-section {
+        padding: 1rem;
+    }
+    
+    .form-actions {
+        flex-direction: column;
+    }
+    
+    .result-actions {
+        flex-direction: column;
+    }
+    
+    .score-circle {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .score-number {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .prediction-form-card h3,
+    .prediction-results-card h3 {
+        font-size: 1.3rem;
+    }
+    
+    .form-section h4 {
+        font-size: 1rem;
+    }
+    
+    .result-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+}
+
+/* Dark mode adjustments */
+[data-theme="dark"] .form-section {
+    background: var(--background-dark);
+    border-color: var(--border-color-dark);
+}
+
+[data-theme="dark"] .prediction-form-card,
+[data-theme="dark"] .prediction-results-card {
+    background: var(--background-dark);
+    border-color: var(--border-color-dark);
+}
+
+[data-theme="dark"] .result-item {
+    border-color: var(--border-color-dark);
+}
+
+/* Animation for results */
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Form validation styles */
+.prediction-form .form-group.error input {
+    border-color: var(--danger-color);
+    box-shadow: 0 0 0 2px rgba(220, 38, 38, 0.1);
+}
+
+.prediction-form .form-group.error label {
+    color: var(--danger-color);
+}
+
+.prediction-form .field-error {
+    color: var(--danger-color);
+    font-size: 0.85rem;
+    margin-top: 0.25rem;
+}
+
+/* Success state for form */
+.prediction-form.success {
+    border-color: var(--success-color);
+}
+
+/* Progress indicator */
+.prediction-progress {
+    width: 100%;
+    height: 4px;
+    background: var(--border-color);
+    border-radius: 2px;
+    overflow: hidden;
+    margin: 1rem 0;
+}
+
+.prediction-progress-bar {
+    height: 100%;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    border-radius: 2px;
+    transition: width 0.3s ease;
+    animation: progressPulse 2s ease-in-out infinite;
+}
+
+@keyframes progressPulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+}
+
+/* Report Upload Styles */
+.upload-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.upload-form-card {
+    background: var(--background-color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    padding: 1.5rem;
+    border: 1px solid var(--border-color);
+    position: relative;
+}
+
+.upload-form-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+}
+
+.upload-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.upload-form .form-section {
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    background: var(--background-secondary);
+}
+
+.upload-form .form-section h4 {
+    color: var(--text-color);
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.upload-form .form-section h4 i {
+    color: var(--primary-color);
+}
+
+.upload-form .form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 0.75rem;
+}
+
+.upload-form .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.upload-form .form-group.full-width {
+    grid-column: 1 / -1;
+}
+
+.upload-form .form-group label {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.upload-form .form-control {
+    padding: 0.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    font-size: 0.9rem;
+    background: var(--background-color);
+    color: var(--text-color);
+    transition: border-color 0.3s ease;
+}
+
+.upload-form .form-control:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.1);
+}
+
+.upload-form .form-actions {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
+    flex-wrap: wrap;
+}
+
+.upload-form .form-actions .btn {
+    min-width: 120px;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+}
+
+.upload-area {
+    border: 2px dashed var(--border-color);
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    text-align: center;
+    background: var(--background-secondary);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.upload-area:hover {
+    border-color: var(--primary-color);
+    background: var(--background-color);
+}
+
+.upload-area.dragover {
+    border-color: var(--primary-color);
+    background: rgba(37, 99, 235, 0.05);
+}
+
+.upload-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.upload-content i {
+    font-size: 3rem;
+    color: var(--primary-color);
+}
+
+.upload-content h4 {
+    color: var(--text-color);
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.upload-content p {
+    color: var(--text-muted);
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.upload-hint {
+    font-size: 0.8rem !important;
+    color: var(--text-muted) !important;
+    font-style: italic;
+}
+
+/* Enhanced Reports Section Styles */
+.reports-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.report-card {
+    background: var(--background-color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border-color);
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.report-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.report-header {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    padding: 1.5rem;
+    position: relative;
+}
+
+.report-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(37, 99, 235, 0.1), rgba(20, 184, 166, 0.1));
+    pointer-events: none;
+}
+
+.report-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0 0 0.5rem 0;
+    position: relative;
+    z-index: 1;
+}
+
+.report-meta {
+    display: flex;
+    gap: 1rem;
+    position: relative;
+    z-index: 1;
+}
+
+.report-type {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.report-date {
+    font-size: 0.85rem;
+    opacity: 0.9;
+}
+
+.report-body {
+    padding: 1.5rem;
+}
+
+.report-content {
+    margin-bottom: 1.5rem;
+}
+
+.report-content h4 {
+    color: var(--primary-color);
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.report-content h4 i {
+    font-size: 0.9rem;
+}
+
+.report-content p {
+    color: var(--text-color);
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.report-actions {
+    display: flex;
+    gap: 0.75rem;
+    justify-content: flex-end;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.report-actions .btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+}
+
+/* Enhanced Analytics Section Styles */
+.analytics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.analytics-card {
+    background: var(--background-color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border-color);
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.analytics-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.analytics-card h3 {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.analytics-card h3 i {
+    font-size: 1rem;
+    color: var(--secondary-color);
+}
+
+.analytics-card canvas {
+    max-height: 300px;
+}
+
+.date-range {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: var(--background-secondary);
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--border-color);
+}
+
+.date-range input[type="date"] {
+    padding: 0.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    background: var(--background-color);
+    color: var(--text-color);
+}
+
+.date-range span {
+    color: var(--text-muted);
+    font-weight: 500;
+}
+
+/* Enhanced Settings Section Styles */
+.settings-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.settings-card {
+    background: var(--background-color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border-color);
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.settings-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.settings-card h3 {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid var(--border-color);
+}
+
+.settings-card h3 i {
+    font-size: 1rem;
+    color: var(--secondary-color);
+}
+
+.settings-card .form-group {
+    margin-bottom: 1rem;
+}
+
+.settings-card .form-group label {
+    display: block;
+    font-weight: 500;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.settings-card .form-group input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    background: var(--background-color);
+    color: var(--text-color);
+    font-size: 0.9rem;
+    transition: border-color 0.3s ease;
+}
+
+.settings-card .form-group input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.1);
+}
+
+.preference-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.preference-item:last-child {
+    border-bottom: none;
+}
+
+.preference-item label {
+    font-weight: 500;
+    color: var(--text-color);
+    font-size: 0.9rem;
+}
+
+/* Switch Toggle Styles */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--border-color);
+    transition: 0.3s;
+    border-radius: 24px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: 0.3s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: var(--primary-color);
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+/* Settings Action Buttons */
+.settings-card .btn {
+    margin-top: 1rem;
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 0.9rem;
+}
+
+.settings-card .btn-danger {
+    background: var(--danger-color);
+    border-color: var(--danger-color);
+}
+
+.settings-card .btn-danger:hover {
+    background: #dc2626;
+    border-color: #dc2626;
+}
+
+/* Empty State Styles */
+.empty-state {
+    text-align: center;
+    padding: 3rem 1rem;
+    color: var(--text-muted);
+}
+
+.empty-state i {
+    font-size: 4rem;
+    color: var(--border-color);
+    margin-bottom: 1rem;
+}
+
+.empty-state h3 {
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+}
+
+.empty-state p {
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+}
+
+/* Responsive styles for Report Upload */
+@media (max-width: 1024px) {
+    .upload-container {
+        max-width: 100%;
+        padding: 0 0.5rem;
+    }
+    
+    .upload-form .form-grid {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 0.5rem;
+    }
+    
+    .upload-form .form-section {
+        padding: 0.75rem;
+    }
+    
+    .upload-form .form-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .upload-form .form-actions .btn {
+        width: 100%;
+        max-width: 200px;
+    }
+    
+    .reports-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .analytics-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .settings-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .upload-form-card {
+        padding: 1rem;
+    }
+    
+    .upload-form .form-grid {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+    }
+    
+    .upload-form .form-section h4 {
+        font-size: 0.95rem;
+    }
+    
+    .upload-form .form-group label {
+        font-size: 0.8rem;
+    }
+    
+    .upload-form .form-control {
+        padding: 0.4rem;
+        font-size: 0.85rem;
+    }
+    
+    .upload-area {
+        padding: 1.5rem;
+    }
+    
+    .upload-content i {
+        font-size: 2.5rem;
+    }
+    
+    .report-header {
+        padding: 1rem;
+    }
+    
+    .report-body {
+        padding: 1rem;
+    }
+    
+    .analytics-card {
+        padding: 1rem;
+    }
+    
+    .settings-card {
+        padding: 1rem;
+    }
+    
+    .date-range {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .upload-container {
+        gap: 1rem;
+    }
+    
+    .upload-form-card {
+        padding: 0.75rem;
+    }
+    
+    .upload-form-card h3 {
+        font-size: 1.1rem;
+    }
+    
+    .upload-form .form-section {
+        padding: 0.5rem;
+    }
+    
+    .upload-form .form-section h4 {
+        font-size: 0.9rem;
+        margin-bottom: 0.75rem;
+    }
+    
+    .upload-form .form-control {
+        padding: 0.35rem;
+        font-size: 0.8rem;
+    }
+    
+    .upload-form .form-actions .btn {
+        padding: 0.6rem 1rem;
+        font-size: 0.85rem;
+    }
+    
+    .upload-area {
+        padding: 1rem;
+    }
+    
+    .upload-content i {
+        font-size: 2rem;
+    }
+    
+    .report-meta {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .report-actions {
+        flex-direction: column;
+    }
+    
+    .report-actions .btn {
+        width: 100%;
+    }
+}
+
+/* Enhanced Patients Section Styles */
+.patients-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.patients-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    background: var(--background-color);
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border-color);
+}
+
+.patients-stats {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.stat-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    background: var(--background-secondary);
+    border-radius: var(--border-radius);
+    border: 1px solid var(--border-color);
+}
+
+.stat-item i {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+}
+
+.stat-content h4 {
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    font-weight: 500;
+}
+
+.stat-content p {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.patients-actions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.patients-actions .btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Enhanced Filters Section */
+.filters {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    flex-wrap: wrap;
+    background: var(--background-color);
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border-color);
+}
+
+.filters .search-group {
+    flex: 1;
+    min-width: 250px;
+    position: relative;
+}
+
+.filters .search-group i {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.filters .search-group input {
+    width: 100%;
+    padding: 0.75rem 1rem 0.75rem 2.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    background: var(--background-color);
+    color: var(--text-color);
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.filters .search-group input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.1);
+}
+
+.filters .filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.filters .filter-group label {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.filters .filter-group select {
+    padding: 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    background: var(--background-color);
+    color: var(--text-color);
+    font-size: 0.9rem;
+    min-width: 150px;
+    transition: border-color 0.3s ease;
+}
+
+.filters .filter-group select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+.filters .filter-actions {
+    display: flex;
+    gap: 0.5rem;
+    align-items: flex-end;
+}
+
+.filters .filter-actions .btn {
+    padding: 0.75rem 1rem;
+    font-size: 0.85rem;
+}
+
+/* Enhanced Table Styles */
+.table-container {
+    background: var(--background-color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border-color);
+    overflow: hidden;
+}
+
+.table-header {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    padding: 1.5rem;
+    position: relative;
+}
+
+.table-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(37, 99, 235, 0.1), rgba(20, 184, 166, 0.1));
+    pointer-events: none;
+}
+
+.table-header h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.3rem;
+    position: relative;
+    z-index: 1;
+}
+
+.table-header p {
+    margin: 0;
+    opacity: 0.9;
+    position: relative;
+    z-index: 1;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--background-color);
+}
+
+.data-table thead {
+    background: var(--background-secondary);
+}
+
+.data-table th {
+    padding: 1rem;
+    text-align: left;
+    font-weight: 600;
+    color: var(--text-color);
+    border-bottom: 2px solid var(--border-color);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.data-table td {
+    padding: 1rem;
+    border-bottom: 1px solid var(--border-color);
+    color: var(--text-color);
+    font-size: 0.9rem;
+}
+
+.data-table tbody tr {
+    transition: all 0.3s ease;
+}
+
+.data-table tbody tr:hover {
+    background: var(--background-secondary);
+    transform: translateX(5px);
+}
+
+/* Enhanced Status Badges */
+.status-badge {
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.status-active {
+    background: rgba(34, 197, 94, 0.1);
+    color: #16a34a;
+    border: 1px solid rgba(34, 197, 94, 0.2);
+}
+
+.status-completed {
+    background: rgba(59, 130, 246, 0.1);
+    color: #2563eb;
+    border: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+.status-critical {
+    background: rgba(239, 68, 68, 0.1);
+    color: #dc2626;
+    border: 1px solid rgba(239, 68, 68, 0.2);
+}
+
+.status-pending {
+    background: rgba(245, 158, 11, 0.1);
+    color: #d97706;
+    border: 1px solid rgba(245, 158, 11, 0.2);
+}
+
+/* Enhanced Table Actions */
+.table-actions {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.action-btn {
+    width: 35px;
+    height: 35px;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.85rem;
+}
+
+.action-btn.view {
+    background: rgba(59, 130, 246, 0.1);
+    color: #2563eb;
+}
+
+.action-btn.view:hover {
+    background: #2563eb;
+    color: white;
+    transform: scale(1.1);
+}
+
+.action-btn.edit {
+    background: rgba(34, 197, 94, 0.1);
+    color: #16a34a;
+}
+
+.action-btn.edit:hover {
+    background: #16a34a;
+    color: white;
+    transform: scale(1.1);
+}
+
+.action-btn.delete {
+    background: rgba(239, 68, 68, 0.1);
+    color: #dc2626;
+}
+
+.action-btn.delete:hover {
+    background: #dc2626;
+    color: white;
+    transform: scale(1.1);
+}
+
+/* Patient Cards View (Alternative to Table) */
+.patients-view-toggle {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.view-toggle-btn {
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--border-color);
+    background: var(--background-color);
+    color: var(--text-color);
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.85rem;
+}
+
+.view-toggle-btn.active {
+    background: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+}
+
+.patients-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 1.5rem;
+}
+
+.patient-card {
+    background: var(--background-color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border-color);
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.patient-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.patient-header {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    padding: 1.5rem;
+    position: relative;
+}
+
+.patient-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(37, 99, 235, 0.1), rgba(20, 184, 166, 0.1));
+    pointer-events: none;
+}
+
+.patient-name {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0 0 0.5rem 0;
+    position: relative;
+    z-index: 1;
+}
+
+.patient-id {
+    font-size: 0.85rem;
+    opacity: 0.9;
+    position: relative;
+    z-index: 1;
+}
+
+.patient-body {
+    padding: 1.5rem;
+}
+
+.patient-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.patient-info-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.patient-info-item label {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.patient-info-item span {
+    font-size: 0.9rem;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.patient-actions {
+    display: flex;
+    gap: 0.75rem;
+    justify-content: flex-end;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.patient-actions .btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+}
+
+/* Empty State for Patients */
+.patients-empty {
+    text-align: center;
+    padding: 3rem 1rem;
+    color: var(--text-muted);
+}
+
+.patients-empty i {
+    font-size: 4rem;
+    color: var(--border-color);
+    margin-bottom: 1rem;
+}
+
+.patients-empty h3 {
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+}
+
+.patients-empty p {
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+}
+
+/* Responsive Design for Patients Section */
+@media (max-width: 1024px) {
+    .patients-header {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .patients-stats {
+        justify-content: center;
+    }
+    
+    .patients-actions {
+        justify-content: center;
+    }
+    
+    .filters {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .filters .search-group {
+        min-width: auto;
+    }
+    
+    .filters .filter-actions {
+        justify-content: center;
+    }
+    
+    .patients-grid {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .patients-stats {
+        gap: 1rem;
+    }
+    
+    .stat-item {
+        flex: 1;
+        min-width: 120px;
+    }
+    
+    .filters .filter-group select {
+        min-width: auto;
+        width: 100%;
+    }
+    
+    .data-table {
+        font-size: 0.8rem;
+    }
+    
+    .data-table th,
+    .data-table td {
+        padding: 0.75rem 0.5rem;
+    }
+    
+    .patients-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .patient-info {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .patients-header {
+        padding: 1rem;
+    }
+    
+    .patients-stats {
+        flex-direction: column;
+    }
+    
+    .stat-item {
+        width: 100%;
+    }
+    
+    .filters {
+        padding: 1rem;
+    }
+    
+    .table-header {
+        padding: 1rem;
+    }
+    
+    .patient-header {
+        padding: 1rem;
+    }
+    
+    .patient-body {
+        padding: 1rem;
+    }
+    
+    .patient-actions {
+        flex-direction: column;
+    }
+    
+    .patient-actions .btn {
+        width: 100%;
+    }
+}

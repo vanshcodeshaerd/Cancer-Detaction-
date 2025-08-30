@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cancer Detection Hospital Portal - Doctor Login</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/login.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-card">
+            <div class="login-header">
+                <div class="logo">
+                    <i class="fas fa-hospital-alt"></i>
+                    <h1>Cancer Detection Portal</h1>
+                </div>
+                <p>Secure access for medical professionals</p>
+            </div>
+            
+            <form id="loginForm" class="login-form">
+                <div class="form-group">
+                    <label for="username">
+                        <i class="fas fa-user-md"></i>
+                        Doctor ID
+                    </label>
+                    <input type="text" id="username" name="username" required placeholder="Enter your Doctor ID">
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">
+                        <i class="fas fa-lock"></i>
+                        Password
+                    </label>
+                    <input type="password" id="password" name="password" required placeholder="Enter your password">
+                </div>
+                
+                <button type="submit" class="login-btn">
+                    <span class="btn-text">Sign In</span>
+                    <span class="btn-loader" style="display: none;">
+                        <i class="fas fa-spinner fa-spin"></i>
+                    </span>
+                </button>
+            </form>
+            
+            <div class="login-footer">
+                <p><i class="fas fa-shield-alt"></i> Secure authentication required</p>
+                <p>Access restricted to authorized medical personnel only</p>
+            </div>
+        </div>
+        
+        <div class="background-decoration">
+            <div class="medical-symbols">
+                <i class="fas fa-dna"></i>
+                <i class="fas fa-microscope"></i>
+                <i class="fas fa-heartbeat"></i>
+                <i class="fas fa-stethoscope"></i>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/auth.js"></script>
+    <script src="js/login.js"></script>
+</body>
+</html>
