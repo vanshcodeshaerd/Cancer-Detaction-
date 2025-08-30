@@ -74,14 +74,43 @@ cancer-detection-portal/
 
 ---
 
-## 📊 Screenshots (Optional)
+## 📊 Screenshots 
 
-*(You can add screenshots later for a professional look — just drag images into your repo and reference them here)*
+*Login Page 
 
-```markdown
-![Login Page](screenshots/login.png)
-![Dashboard](screenshots/dashboard.png)
-```
+<img width="1216" height="1415" alt="image" src="https://github.com/user-attachments/assets/dd9daaf5-4d90-4ca3-9384-f45dd969b2e6" />
+
+*DashBoard
+
+<img width="2433" height="1415" alt="image" src="https://github.com/user-attachments/assets/23375ca3-8e0e-445c-bfae-a6722b4f3a0d" />
+
+*Patients
+
+<img width="2450" height="1399" alt="image" src="https://github.com/user-attachments/assets/c7de2276-e92d-49ab-a799-738b4c9a3602" />
+
+*Patient Registration 
+
+<img width="2153" height="1385" alt="image" src="https://github.com/user-attachments/assets/48f7dc59-284e-40e7-82ee-dab5b999acc5" />
+
+*Reports 
+
+<img width="2031" height="777" alt="image" src="https://github.com/user-attachments/assets/2d095c10-b88b-440e-9be9-c896a95cdb9f" />
+
+*Report Upload 
+
+<img width="912" height="1278" alt="image" src="https://github.com/user-attachments/assets/b1aa93f3-9371-4a50-9a2c-48e87ec22252" />
+
+*Analytics
+
+<img width="2014" height="1216" alt="image" src="https://github.com/user-attachments/assets/73fd1820-a492-487e-a1c0-2fa5588ba5dc" />
+
+*AI Predicator
+
+<img width="740" height="1075" alt="image" src="https://github.com/user-attachments/assets/6ac9d245-3b99-43c6-b914-b27c7fa73b80" />
+
+*Settings
+
+<img width="2009" height="1314" alt="image" src="https://github.com/user-attachments/assets/2a49e50c-df0c-4982-a64a-4e79d20fbe75" />
 
 ---
 
